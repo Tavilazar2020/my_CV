@@ -4,7 +4,239 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>CV Octavian Lazar</title>
   </head>
-  <body></body>
+  <body>
+    <!------------ DIV LEFT -->
+    <section class="big_div">
+      <div class="div_left">
+        <img src="./media/index.jpg" alt="" />
+        <h3 class="text_aboutme">ABOUT ME - The professional</h3>
+        <div class="shadow_aboutme"></div>
+        <p class="text__abou_me_p">
+          +10years of experience in Supplier quality Management & Development in
+          Automotive Industry <br />
+          +5years of international assignments, working in different countries
+          in EU <br />
+          +2years of teammanagement <br />
+          +100 Audits performed as per VDA6.3
+        </p>
+        <h3 class="text_education">EDUCATION</h3>
+        <div class="shadow_education"></div>
+
+      <!-- TIMELINE EDUCATION -->
+      <div class="timeline_education">
+        <div class="container_2003_2008">
+          <!-- job esperience -->
+          <h5 class="h5_education">2003 - 2008</h5>
+          <h6 class="job_education">
+            Mechanical Engineer/University
+          </h6>
+          <p class="education_p">
+            Technical University "Gh. Asachi", 
+            Faculty "Machine Building and Industrial Management” Iasi, Romania
+          </p>
+        </div>
+      </DIV>
+      <!-- SKILLS CARD -->
+      <h3 class="text_skills">Skills %</h3>
+      <div class="shadow_skills"></div>
+
+              <!-- SKILLS DIVS -->
+
+              <!-- container_quality_tools -->
+              <div class="container_quality_tools">
+                  <p class="slider_text">Quality Tools</p>
+                  <input type="range" min="5" max="100" value="90" id="slider_qt">
+                  <div id="selector">
+                    <div class="SelectorBtn"></div>
+                    <div id="SelectValue"></div>
+                  </div>
+              </div>
+
+              <!-- container_Ms_office -->
+              <div class="container_Ms_office">
+                <p class="slider_text">Ms Office</p>
+                <input type="range" min="5" max="100" value="70" id="slider_ms">
+                <div id="selector_MS_O">
+                  <div class="SelectorBtn"></div>
+                  <div id="SelectValue_MS_O"></div>
+                </div>
+            </div>
+
+            <!-- Container negociations -->
+            <div class="container_neg">
+              <p class="slider_text">Negotiation</p>
+              <input type="range" min="5" max="100" value="60" id="slider_neg">
+              <div id="selector_neg">
+                <div class="SelectorBtn"></div>
+                <div id="SelectValue_neg"></div>
+              </div>
+          </div>
+
+                 <!-- Container trainer -->
+                 <div class="container_train">
+                  <p class="slider_text">Trainer</p>
+                  <input type="range" min="5" max="100" value="80" id="slider_train">
+                  <div id="selector_train">
+                    <div class="SelectorBtn"></div>
+                    <div id="SelectValue_train"></div>
+                  </div>
+              </div>
+
+                   <!-- Container Prog -->
+                   <div class="container_prog">
+                    <p class="slider_text_right">Programming </p><p class="p_smaller">(JS/NodeJS/ SQLite/HTML/CSS)</p>
+                    <input type="range" min="5" max="100" value="30" id="slider_prog">
+                    <div id="selector_prog">
+                      <div class="SelectorBtn"></div>
+                      <div id="SelectValue_prog"></div>
+                    </div>
+                </div>
+
+                      <!-- Container customer Interface -->
+                      <div class="container_cust">
+                        <p class="slider_text">Customer/Supplier Interface</p>
+                        <input type="range" min="5" max="100" value="90" id="slider_cust">
+                        <div id="selector_cust">
+                          <div class="SelectorBtn"></div>
+                          <div id="SelectValue_cust"></div>
+                        </div>
+                    </div>
+
+       <!-- CONTACTO-->
+      <h3 class="text_Contact">Contact</h3>
+      <div class="shadow_contact"></div>
+
+
+      <h6 class="contact">
+        0034685942287 (Mobile) <br>  Madrid, Spain. ZIP code 28027
+      </h6>
+     <a href="">octavian.lazar2013@gmail.com</a>
+  
+     <!-- LANGUAGES -->
+
+   
+<div class="languages_chart">
+
+  <canvas id="mychart"></canvas>
+
+</div>
+
+
+      </div>
+
+
+
+
+      <!-- RIGHT DIV-->
+      <div class="div_right">
+        <div class="main_name">
+          <h2>Octavian Lazar</h2>
+          <h5>
+            Quality Management Professional, Quality Auditor, <br />
+            Supplier/Customer Interface <br />
+            Passionate programmer (as hobby)
+          </h5>
+        </div>
+
+        <!-- MY PROFILE -->
+        <div class="Myprofile">
+          <h3 class="text_myprof">MY PROFILE - Who am I</h3>
+          <div class="shadow_who_im_i"></div>
+        </div>
+        <p class="text_p">
+          I'm a team player,enjoying winning and motivate others to win. I have
+          a clear and open communication, networking skills, and a good
+          intercultural sensitivity. I strongly believe that strong persons
+          creates strong business.
+        </p>
+
+        <!-- EXPERIENCE -->
+        <div class="Experience">
+          <h3 class="text_Experience">EXPERIENCE</h3>
+          <div class="shadow_who_im_i"></div>
+        </div>
+
+        <!-- TIMELINE -->
+        <div class="timeline">
+          <div class="container_2017_present">
+            <!-- job esperience -->
+            <h5 class="h5_experience">2017 - present</h5>
+            <h6 class="job_name">
+              Quality Auditor/Project Manager Supplier quality
+            </h6>
+            <ul class="experience_p" style="list-style-type:square;">
+              <li>Supplier Development Program Expert</li>
+              <li>8D Expert, Problem Solver Expert, Internal auditor IATF 16949 and VDA 6.3</li>
+              <li>Main window of supplier quality department in case of customers audits in Madrid Factory</li>
+              <li>Process expert & Documentation owner</li>
+              <li>Internal Trainer for different methodologies(FMEA, 8D, PPAP)</li>
+          </div>
+            <div class="container_2015_2017">
+            <!-- job esperience -->
+            <h5 class="h5_experience">2015 - 2017</h5>
+            <h6 class="job_name">
+              Group Leader / BOSCH Romania S.R.L
+            </h6>
+            <ul class="experience_p" style="list-style-type:square;">
+              <li>Management of 12 associates including -Associates selection ,Competence management , Goal definition, Development Plans,Performance monitoring</li>
+              <li>Responsible for all Serial support activities</li>
+          </div>
+          <div class="container_2014_2015">
+            <!-- job esperience -->
+            <h5 class="h5_experience">2014 - 2015</h5>
+            <h6 class="job_name">
+              Project Manager / BOSCH Romania S.R.L.
+            </h6>
+            <ul class="experience_p" style="list-style-type:square;">
+              <li>Responsible for Budget, quality, and timeframe implementation of the Development projects after SOP (Products modifications in series</li>
+          </div>
+          <div class="container_2012_2014">
+            <!-- job esperience -->
+            <h5 class="h5_experience">2012 - 2014</h5>
+            <h6 class="job_name">
+              Supplier Quality Manager/ De’Longhi Romania S.R.L. </h6>
+            <ul class="experience_p" style="list-style-type:square;">
+              <li>Managing Supplier quality Department -Incoming Inspection and Supplier Quality Assurance. Direct supervision of 5 employees</li>
+          </div>
+          <div class="container_2008_2012">
+            <!-- job esperience -->
+            <h5 class="h5_experience">2008 - 2012</h5>
+            <h6 class="job_name">
+              Quality Lead Auditor / Continental Automotive Romania S.RL.</h6>
+            <ul class="experience_last_lu" style="list-style-type:square;">
+              <li >Lead Auditor according to VDA6.3 Process Audit</li>
+          </div>
+        </div>
+            <!-- AWARDS AND CERTIFICATES -->
+            <div class="award_certificates">
+              <h3 class="text_myprof">AWARDS & CERTIFICATES</h3>
+              <div class="shadow_who_im_i"></div>
+            </div>
+            <p class="text_p_awards">
+              8D Training  | APQP Training |  Component Introduction and Ramp-up Process Training  | FMEA Basic Training | Internal auditor for Integrated Quality Management System according to ISO 9001, ISO 14001 | OHSAS 18001 | Internal auditor for Quality Management System according to ISO/TS 16949:2009 and ISO 19011:2002 | MSA Training | Presentation Skills| Presentation Techniques Training | Product Change/Termination Notification Training | Project Management Fundamentals | SPC Training | Supplier Competence Training | VDA 6.3 Process Audit 2010
+            </p>
+
+            <!-- Languages-->
+            <div class="languages">
+            <h3 class="text_myprof">LANGUAGES %</h3>
+            <div class="shadow_who_im_i"></div>
+          </div>
+        
+
+
+
+
+      </div>
+    </section>
+
+          <script src="./index.js"></script>
+  </body>
 </html>
