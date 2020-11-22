@@ -79,7 +79,7 @@ let mylanguageChart = new Chart(myChart, {
     datasets: [
       {
         data: [90, 80, 70, 100],
-        backgroundColor: ["#1a1c20", "#f9813a", "#839b97", "#bedbbb"],
+        backgroundColor: ["#5c6e91", "#f9813a", "#839b97", "#bedbbb"],
         borderColor: [
           "rgba(255, 99, 132, 1)",
           "rgba(54, 162, 235, 1)",
