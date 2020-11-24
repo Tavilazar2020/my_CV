@@ -70,7 +70,7 @@ slider_cust.oninput = function () {
   selector_cust.style.left = this.value + "%";
 };
 
-// CANVAS CHARTS
+// CANVAS CHARTS.js
 let myChart = document.getElementById("mychart").getContext("2d");
 let mylanguageChart = new Chart(myChart, {
   type: "bar",

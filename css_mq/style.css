@@ -673,7 +673,7 @@ h2 {
 
 .timeline {
   position: absolute;
-  width: 350px;
+  width: 100%;
   margin: 0 auto;
   top: 35%;
 }
@@ -686,23 +686,34 @@ h2 {
   background-color: white;
   top: 0;
   bottom: 0;
-  left: 27%;
+  left: 30%;
   margin-left: -3px;
 }
 
 .experience_p {
   position: absolute;
-  margin-top: 1%;
+  margin-top: -7%;
   font-size: 10px;
-  margin-left: 32%;
+  margin-left: 37%;
   background: none;
   color: white;
+  max-width: 55%;
+}
+
+.experience_p_2012 {
+  position: absolute;
+  margin-top: -5%;
+  font-size: 10px;
+  margin-left: 37%;
+  background: none;
+  color: white;
+  max-width: 55%;
 }
 
 .h5_experience {
   color: white;
-  padding-left: 2%;
-  max-width: 80spx;
+  padding-left: 3%;
+  padding-bottom: 10%;
 }
 
 .h5_experience::after {
@@ -711,7 +722,7 @@ h2 {
   width: 8px;
   height: 8px;
   margin-top: 7px;
-  left: 88px;
+  left: 28.3%;
   background-color: white;
   border-radius: 50%;
   z-index: 1;
@@ -719,31 +730,41 @@ h2 {
 
 .job_name {
   position: absolute;
-  margin-left: 105px;
-  margin-top: -20px;
+  margin-left: 34%;
+  margin-top: -15%;
   color: white;
   background: none;
   text-decoration: underline;
+  max-width: 63%;
 }
 .container_2015_2017 {
-  margin-top: 38%;
+  margin-top: 30%;
+  max-width: 89%;
+}
+
+.container_2017_present {
+  max-width: 89%;
 }
 
 .container_2014_2015 {
-  margin-top: 20%;
+  margin-top: 18%;
+  max-width: 89%;
 }
 .container_2012_2014 {
-  margin-top: 15%;
+  margin-top: 8%;
+  max-width: 89%;
 }
 .container_2008_2012 {
-  margin-top: 15%;
+  margin-top: 8%;
+  max-width: 89%;
 }
 .experience_last_lu {
   margin-top: 5%;
   font-size: 10px;
-  margin-left: 32%;
+  margin-left: 36%;
   background: none;
   color: white;
+  max-width: 55%;
 }
 
 /* Awards and Certificates */
