@@ -228,7 +228,7 @@ img {
 
 #selector {
   height: 104px;
-  width: 38px;
+  width: 37px;
   position: absolute;
   bottom: -85px;
   left: 90%;
@@ -238,7 +238,7 @@ img {
 .SelectorBtn {
   height: 14px;
   width: 14px;
-  background-image: url(./media/slider-icon-14.jpg);
+  background-image: url("../media/slider-icon-14.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -619,13 +619,13 @@ a {
 
 h5,
 h2 {
-  background-image: linear-gradient(to right, #feb360, #ff916f);
+  background-image: none;
 }
 
 .Myprofile {
   position: absolute;
   left: 0;
-  top: 15%;
+  top: 16%;
   height: 24px;
   width: 50%;
 }
@@ -690,16 +690,6 @@ h2 {
   margin-left: -3px;
 }
 
-.experience_p {
-  position: absolute;
-  margin-top: -7%;
-  font-size: 10px;
-  margin-left: 37%;
-  background: none;
-  color: white;
-  max-width: 55%;
-}
-
 .experience_p_2012 {
   position: absolute;
   margin-top: -5%;
@@ -731,31 +721,61 @@ h2 {
 .job_name {
   position: absolute;
   margin-left: 34%;
-  margin-top: -15%;
+  margin-top: -16%;
   color: white;
   background: none;
   text-decoration: underline;
   max-width: 63%;
 }
 .container_2015_2017 {
-  margin-top: 30%;
+  margin-top: 25%;
   max-width: 89%;
+}
+
+.experience_p_2015 {
+  position: absolute;
+  margin-top: -10%;
+  font-size: 10px;
+  margin-left: 37%;
+  background: none;
+  color: white;
+  max-width: 55%;
 }
 
 .container_2017_present {
   max-width: 89%;
 }
 
+.experience_p_2017 {
+  position: absolute;
+  margin-top: -4%;
+  font-size: 10px;
+  margin-left: 37%;
+  background: none;
+  color: white;
+  max-width: 55%;
+}
+
 .container_2014_2015 {
-  margin-top: 18%;
+  margin-top: 15%;
   max-width: 89%;
 }
+
+.experience_p_2014 {
+  position: absolute;
+  margin-top: -10%;
+  font-size: 10px;
+  margin-left: 37%;
+  background: none;
+  color: white;
+  max-width: 55%;
+}
 .container_2012_2014 {
-  margin-top: 8%;
+  margin-top: 11%;
   max-width: 89%;
 }
 .container_2008_2012 {
-  margin-top: 8%;
+  margin-top: 12%;
   max-width: 89%;
 }
 .experience_last_lu {
