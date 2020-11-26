@@ -5,8 +5,15 @@
   }
 
   .main_name {
-    padding-right: 40% !important;
+    max-width: 58%;
+    padding-right: 0 !important;
   }
+  .img_mob {
+    padding: 0 !important;
+    margin-right: 5% !important;
+    float: right;
+  }
+
   .carousel-inner {
     padding-top: 35% !important;
   }
@@ -33,16 +40,6 @@
     z-index: 2;
   }
 
-  .img_mobile {
-    top: -350vh !important;
-    margin-left: 70% !important;
-    position: absolute;
-    z-index: 2;
-  }
-  .img_mob {
-    height: 100%;
-    width: 100%;
-  }
   /* LABEL MY PROFILE */
   .text_myprof_mobile {
     margin-bottom: 0;

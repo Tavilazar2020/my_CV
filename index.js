@@ -125,4 +125,17 @@ let mylanguageChart = new Chart(myChart, {
   },
 });
 
-// COURSELL
+// moving photo
+
+function myFunction(x) {
+  if (x.matches) {
+    // If media query matches
+    $("#img_dest").append($("#img_move"));
+  } else {
+    $("#img_move").append($("#img_dest"));
+  }
+}
+
+var x = window.matchMedia("(max-width: 767px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
