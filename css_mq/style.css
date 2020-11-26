@@ -34,7 +34,7 @@
   }
 
   .img_mobile {
-    top: -105% !important;
+    top: -350vh !important;
     margin-left: 70% !important;
     position: absolute;
     z-index: 2;
