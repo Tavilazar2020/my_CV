@@ -1,3 +1,7 @@
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
+import "./css_mq/style.css";
+
 let slider = document.getElementById("slider_qt");
 let selector = document.getElementById("selector");
 let SelectValue = document.getElementById("SelectValue");

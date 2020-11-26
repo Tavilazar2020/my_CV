@@ -270,7 +270,7 @@ img {
 .SelectorBtn {
   height: 14px;
   width: 14px;
-  background-image: url("../media/slider-icon-14.jpg");
+  background-image: url("/slider-icon-14.3e6f36aa.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -800,3 +800,6 @@ h2 {
   padding-right: 15%;
   padding-left: 15%;
 }
+
+
+/*# sourceMappingURL=/style.d3d342c2.css.map */

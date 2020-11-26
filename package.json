@@ -1,0 +1,28 @@
+{
+  "name": "my_CV_Responsive",
+  "version": "1.0.0",
+  "description": "my_CV",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tavilazar2020/my_CV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tavilazar2020/my_CV/issues"
+  },
+  "homepage": "https://github.com/Tavilazar2020/my_CV#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
