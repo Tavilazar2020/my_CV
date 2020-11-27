@@ -10280,42 +10280,9 @@ a.text-dark:hover, a.text-dark:focus {
   .carousel-inner {
     padding-top: 35% !important;
   }
-  .text_aboutme {
-    background-image: linear-gradient(to right, #ff916f, #feb360);
-    float: right;
-    color: white;
-    font-size: 110%;
-    padding: 3%;
-    padding-right: 10% !important;
-    padding-left: 10% !important;
-    margin-top: 10%;
-    margin-bottom: 0;
-  }
+
   .h5_education::after {
     display: none;
-    content: "";
-    position: absolute;
-    right: -6.5% !important;
-    top: 4%;
-    width: 12px;
-    height: 12px;
-    background-color: black;
-    z-index: 2;
-  }
-
-  /* LABEL MY PROFILE */
-  .text_myprof_mobile {
-    margin-bottom: 0;
-    padding-right: 10% !important;
-  }
-
-  .shadow_who_im_i {
-    width: 50% !important;
-  }
-  /* LABEL AWARDS AND CERTIFICATES */
-
-  .award_certificates {
-    padding-right: 8% !important;
   }
 
   /* LEFT DIV */
@@ -10324,23 +10291,7 @@ a.text-dark:hover, a.text-dark:focus {
     order: 2;
     position: relative;
   }
-
-  /* LABEL ABOUT ME */
-  .text_aboutme {
-    padding-left: 2% !important;
-    padding-right: 1% !important;
-  }
-
-  /* LABEL SKILLS */
-
-  .text_skills {
-    padding-left: 27% !important;
-  }
-
-  .a_mobile {
-    font-size: 70%;
-    padding-left: 5% !important;
-  }
+  
 }
 
 * {
@@ -10358,7 +10309,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .div_right {
   position: relative;
-  height: 1500px;
+
   margin-right: 0;
   display: inline-block;
   background-image: linear-gradient(to right, #feb360, #ff916f);
@@ -10397,7 +10348,6 @@ img {
   padding-right: 0 !important;
   padding-left: 0 !important;
   margin-right: 0 !important;
-
   background-image: linear-gradient(to right, #eeeeee, #999999, #c3c3c3);
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
 }
@@ -10966,8 +10916,7 @@ a {
 /* MAIN NAME */
 
 .main_name {
-  position: absolute;
-  left: 5%;
+ left: 5%;
   top: 3%;
 }
 
@@ -10980,17 +10929,18 @@ h2 {
 
 .text_myprof {
   background-image: linear-gradient(to right, #dfdfdf, #f7f7f7, #dfdfdf);
-  float: left;
-  color: black;
+  float: left !important;
+  text-align: right;
+  color:black;
+  font-size: 110%;
   padding: 3%;
   margin-bottom: 0;
-  padding-right: 15%;
-  padding-left: 15%;
+
+
 }
 .shadow_who_im_i {
   height: 15px;
-  width: 80%;
-  float: left;
+  float: left !important;
   padding-right: 0 !important;
   padding-left: 0 !important;
   margin-right: 0 !important;
@@ -11010,12 +10960,13 @@ h2 {
 
 .text_Experience {
   background-image: linear-gradient(to right, #dfdfdf, #f7f7f7, #dfdfdf);
-  float: left;
-  color: black;
+  float: left !important;
+  text-align: right;
+  color:black;
+  font-size: 110%;
   padding: 3%;
   margin-bottom: 0;
-  padding-right: 25%;
-  padding-left: 25%;
+
 }
 
 /* EDUCATION CAROUSELL */
@@ -11048,21 +10999,19 @@ h2 {
   padding-bottom: 10%;
 }
 .carousel-inner {
-  padding-top: 50%;
+  padding-top: 45%;
 }
 
 /* Awards and Certificates */
 
 .award_certificates {
   background-image: linear-gradient(to right, #dfdfdf, #f7f7f7, #dfdfdf);
-  float: left;
-  color: black;
+  float: left !important;
+  text-align: right;
+  color:black;
+  font-size: 110%;
   padding: 3%;
-  margin-top: 10%;
   margin-bottom: 0;
-  padding-right: 15%;
-  padding-left: 15%;
 }
-
 
 /*# sourceMappingURL=/my_CV_Responsive.e31bb0bc.css.map */
