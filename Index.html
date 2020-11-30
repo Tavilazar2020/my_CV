@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css">
   <link rel="stylesheet" href="./css_mq/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -23,10 +24,10 @@
 
       <!-- FOTO -->
 
-      <div class="col-md-3  div_left">
-        <div class="row no-gutters img_mobile ">
-          <div class="col">
-            <img class="img_mob" src="./media/index.jpg" alt="" id="img_move" />
+      <div class="col-md-3 div_left">
+        <div class="row no-gutters ">
+          <div class="col" id="img_move"  >
+            <img class="img_mob" src="./media/index.jpg" alt=""  />
           </div>
         </div>
 
@@ -237,19 +238,22 @@
 
       <!-- RIGHT DIV-->
 
-      <div class="col-md-3  div_right">
+      <div class="col-md-3 div_right">
 
         <!-- MAIN NAME -->
-        <div class="row no-gutters mt-4">
-          <div class=" col-8 main_name">
+    
+    
+          <div class="row no-gutters no-wrap mt-4">
+          <div class=" col main_name">
             <h2>Octavian Lazar</h2>
             <h5>
               Quality Management Professional, <br> Quality Auditor, <br />
               Supplier/Customer Interface <br />
               Passionate programmer (as hobby)
-            </h5>
+            </h5>  
           </div>
-          <div class="col img_mobile" id="img_dest"></div>
+          <div class="col" id="img_dest"> <img src="./media/index2.jpg" alt="">
+          </div>
         </div>
 
 
@@ -306,7 +310,7 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item no-gutters active">
+            <div class="carousel-item no-gutters active"  data-interval="7000">
               <img src="" class="img_false block" alt="">
               <div class="carousel-caption  d-md-block">
                 <h2 class="H2_title">2017 - present</h2>
@@ -321,20 +325,19 @@
                 </ul>
               </div>
             </div>
-            <div class="carousel-item ">
+            <div class="carousel-item " data-interval="y000">
               <img src="" class=" img_false block " alt="">
               <div class="carousel-caption d-md-block">
                 <h2 class="H2_title">2015 - 2017</h2>
                 <h3 class="job_name"> Group Leader / BOSCH Romania S.R.L</h3>
                 <ul class="experience_p">
-                  <li>Management of 12 associates including -Associates selection ,Competence management , Goal
-                    definition,
-                    Development Plans,Performance monitoring</li>
+                  <li>Management of 12 associates including selection, Cpt.Manag., Development Plans,Perf. monitoring</li>
                   <li>Responsible for all Serial support activities</li>
+                  <li>Estimation and planning of the Group Budget including billing setup process</li>
                 </ul>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="7000">
               <img src="" class=" img_false block" alt="">
               <div class="carousel-caption d-md-block">
                 <h2 class="H2_title">2014 - 2015</h2>
@@ -343,27 +346,32 @@
                   <li>Responsible for Budget, quality, and timeframe implementation of the Development projects after
                     SOP
                     (Products modifications in series</li>
+                    <li>Responsible for Bill of Material modification  after SOP</li>
+                    <li>Engineering change request Trainer/Expert</li>
                 </ul>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="7000">
               <img src="" class=" img_false block" alt="">
               <div class="carousel-caption d-md-block">
                 <h2 class="H2_title">2012 - 2014</h2>
                 <h3 class="job_name"> Supplier Quality Manager/ De’Longhi Romania S.R.L.</h3>
                 <ul class="experience_p">
-                  <li>Managing Supplier quality Department -Incoming Inspection and Supplier Quality Assurance. Direct
+                  <li>Managing Supplier quality group -Incoming Inspection and Supplier Quality Assurance. Direct
                     supervision of 5 employees</li>
-                </ul>
+                    <li>Setup of the Incoming Inspection Process Flow and SAP Config</li>
+                    <li>Technical advisor in case of products transfers and new suppliers locatization</li>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="7000">
               <img src="" class=" img_false block" alt="">
               <div class="carousel-caption d-md-block">
                 <h2 class="H2_title">2008 - 2012</h2>
                 <h3 class="job_name">Quality Lead Auditor / Continental Automotive Romania S.RL </h3>
                 <ul class="experience_p">
-                  <li>Lead Auditor according to VDA6.3 Process Audit</li>
+                  <li>Lead Auditor for Forging, Bearing and Fasteners Product Category according to VDA6.3 Process Audit</li>
+                  <li>Quality Improvement Program Leader with different german suppliers</li>
+                  <li>Quality KPI Monitoring & Reporting</li>
                 </ul>
               </div>
             </div>
@@ -408,16 +416,18 @@
           </div>
         </div>
 
-        <div class="row mt-3 mr-3 no-gutters">
-          <p class="text_p">
-            8D Training | APQP Training | Component Introduction and Ramp-up Process Training | FMEA Basic Training |
-            Internal auditor for Integrated Quality Management System according to ISO 9001, ISO 14001 | OHSAS 18001 |
-            Internal auditor for Quality Management System according to ISO/TS 16949:2009 and ISO 19011:2002 | MSA
-            Training | Presentation Skills| Presentation Techniques Training | Product Change/Termination Notification
-            Training | Project Management Fundamentals | SPC Training | Supplier Competence Training | VDA 6.3 Process
-            Audit 2010
-          </p>
-        </div>
+          <div class="container">
+            <div class="row">
+
+              
+                  <div class="col img_hobbies "> <img class=" p-3 img_hobbies" src="./media/cr7.webp" alt=""></div>
+                  <div class="col img_hobbies">  <img class=" p-3 img_hobbies" src=".//media/jb.webp" alt=""></div>
+                  <div class="col img_hobbies"> <img class="p-3 img_hobbies" src="./media/travel.webp" alt=""></div>
+                  <div class="col img_hobbies"> <img class="p-3 img_hobbies" src="./media/programming.webp" alt=""></div>
+          
+            </div>
+          </div>
+      
 
       </div>
     </div>

@@ -131,15 +131,89 @@ let mylanguageChart = new Chart(myChart, {
 
 // moving photo
 
-function myFunction(x) {
-  if (x.matches) {
-    // If media query matches
-    $("#img_dest").append($("#img_move"));
-  } else {
-    $("#img_move").append($("#img_dest"));
+
+//=======================================================
+
+function myFunction(e) {
+  if (e.matches) { // If media query matches    
+    document.getElementById("img_move").style.display = 'none'    
+    document.getElementById("img_dest").style.display = 'block'
+
+  } else{
+    document.getElementById("img_move").style.display = 'block';
+    document.getElementById("img_dest").style.display = 'none'
   }
 }
 
-var x = window.matchMedia("(max-width: 767px)");
-myFunction(x); // Call listener function at run time
-x.addListener(myFunction); // Attach listener function on state changes
+var x = window.matchMedia("(max-width: 768px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+//=============================================
+
+// const mediumBp = matchMedia('(max-width: 767px)');
+// const changeSize = mql => {
+// mql.matches
+// ? document.getElementById("img_move").append(document.getElementById("img_dest"))
+// : document.getElementById("img_dest").append(document.getElementById("img_move"))
+// }
+
+// mediumBp.addEventListener(changeSize);
+// changeSize(mediumBp);
+
+//===============================================================
+
+
+
+// function myFunction(e) {
+//   if (e.matches) { // If media query matches
+//     document.getElementById("img_move").append(document.getElementById("img_dest"));
+
+//   } else{
+//     document.getElementById("img_dest").append(document.getElementById("img_move"));
+//   }
+// }
+
+// var e = window.matchMedia("(max-width: 767px)")
+// myFunction(e) // Call listener function at run time
+// e.MediaqueryListEvent(myFunction) // Attach listener function on state changes
+
+
+// function myFunction(event) {  //on a state change you get myFunction called but with parameter event, not x
+//   if (event.matches) { // If media query matches
+//     console.log('media query matches');
+//     document.getElementById("img_move").append(document.getElementById("img_dest"));
+// // you will see an error here: on Firefox: media query matches test14.html:11:13
+// //HierarchyRequestError: Node cannot be inserted at the specified point in the hierarchy
+// //on Edge 
+// //Uncaught DOMException: Failed to execute 'append' on 'Element': The new child element contains the parent.
+// //    at MediaQueryList.myFunction (file:///C:/Users/annet/Documents/test14.html:1
+
+//   } else{
+//     console.log('media query does not match');
+//     document.getElementById("img_dest").append(document.getElementById("img_move"));
+//   }
+// }
+// var x = window.matchMedia("(max-width: 767px)");//brackets were missing so never saw media width changing
+
+// //myFunction(x); // Call listener function at run time - this function needs an event to match up the media tests with
+
+// mediaQueryList.addListener(myFunction, x); // Attach listener function on state changes
+
+//===================STACK
+
+// const listener = evt => {
+//   if (evt.matches) {
+//       document.getElementsByClassName("img_mob").append(document.getElementsById("img_dest_a"));
+
+//   } else {
+//       document.getElementsByClassName("img_mob").append(document.getElementsById("img_dest_b"));
+//   }
+// };
+
+// const mediaQueryList = window.matchMedia('(max-width: 767px)');
+
+// listener(mediaQueryList);
+
+// mediaQueryList.addEventListener('change', listener);
+
+
