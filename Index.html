@@ -26,8 +26,8 @@
 
       <div class="col-md-3 div_left">
         <div class="row no-gutters ">
-          <div class="col" id="img_move"  >
-            <img class="img_mob" src="./media/index.jpg" alt=""  />
+          <div class="col" id="img_move">
+            <img class="img_mob" src="./media/index.jpg" alt="" />
           </div>
         </div>
 
@@ -46,12 +46,14 @@
 
         <div class="row no-gutters">
           <p class="text__abou_me_p">
-            +10years of experience in Supplier quality Management & Development in
+            +10 years of experience in Supplier quality Management & Development in
             Automotive Industry <br>
-            +5years of international assignments, working in different countries
+            +5 years of international assignments, working in different countries
             in EU <br />
-            +2years of teammanagement <br />
-            +100 Audits performed as per VDA6.3
+            +2 years of teammanagement <br />
+            + 100 Audits performed as per VDA6.3 <br>
+            + Good knowledge of CSS/HTML/BOOTSTRAP <br>
+            + Basic knowledge of JS/NodeJs
           </p>
         </div>
 
@@ -95,102 +97,51 @@
           </div>
         </div>
 
+        <!-- PIE CHARTS QUALITY SKILL -->
 
-
-
-        <!-- SKILLS DIVS -->
-
-        <!-- container_quality_tools -->
-
-        <div class="row no-gutters">
-          <div class="col-6">
-            <div class="container_quality_tools">
-              <p class="slider_text">Quality Tools</p>
-              <input type="range" min="1" max="100" value="90" id="slider_qt">
-              <div id="selector">
-                <div class="SelectorBtn"></div>
-                <div id="SelectValue"></div>
-              </div>
-            </div>
+        <div class="row mt-4 no-gutters">
+          <div class="col-md-6">
+            <canvas id="myPiechart"></canvas>
           </div>
+
+          <!-- PIE CHARTS MS SKILLS -->
+
+          <div class="col-md-6">
+            <canvas id="myPieMSchart"></canvas>
+          </div>
+
+        </div>
+
+        <div class="row mt-4 no-gutters">
+
+          <!-- PIE CHARTS NEG SKILLS -->
+          <div class="col-md-6">
+            <canvas id="myPieNegchart"></canvas>
+          </div>
+
+          <!-- PIE CHARTS TRAIN SKILLS -->
+
+          <div class="col-md-6">
+            <canvas id="myPieTrainchart"></canvas>
+          </div>
+
+        </div>
+        <!-- PIE CHARTS PROG SKILLS -->
+
+        <div class="row mt-4 no-gutters">
+          <div class="col-md-6">
+            <canvas id="myPieProgchart"></canvas>
+          </div>
+
+          <!-- PIE CHARTS CUST SKILLS -->
+
+          <div class="col-md-6">
+            <canvas id="myPieCustchart"></canvas>
+          </div>
+
         </div>
 
 
-
-        <!-- container_Ms_office -->
-
-        <div class="row justify-content-end mr-3 no-gutters ">
-          <div class="col-6">
-            <div class="container_Ms_office">
-              <p class="slider_text">Ms Office</p>
-              <input type="range" min="1" max="100" value="70" id="slider_ms">
-              <div id="selector_MS_O">
-                <div class="SelectorBtn"></div>
-                <div id="SelectValue_MS_O"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Container negociations -->
-
-        <div class="row no-gutters">
-          <div class="col-6">
-            <div class="container_neg">
-              <p class="slider_text">Negotiation</p>
-              <input type="range" min="1" max="100" value="60" id="slider_neg">
-              <div id="selector_neg">
-                <div class="SelectorBtn"></div>
-                <div id="SelectValue_neg"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Container trainer -->
-        <div class="row justify-content-end mr-3 no-gutters ">
-          <div class="col-6">
-            <div class="container_train">
-              <p class="slider_text">Trainer</p>
-              <input type="range" min="1" max="100" value="80" id="slider_train">
-              <div id="selector_train">
-                <div class="SelectorBtn"></div>
-                <div id="SelectValue_train"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Container Prog -->
-
-        <div class="row no-gutters">
-          <div class="col-6">
-            <div class="container_prog">
-              <p class="row no-gutters justify-content-end slider_text_right">Programming </p>
-              <p class="row float-right p_smaller">(JS/NodeJS/ SQLite/HTML/CSS)</p>
-              <input type="range" min="1" max="100" value="30" id="slider_prog">
-              <div id="selector_prog">
-                <div class="SelectorBtn"></div>
-                <div id="SelectValue_prog"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Container customer Interface -->
-        <div class="row justify-content-end mr-3 no-gutters ">
-          <div class="col-6">
-            <div class="container_cust">
-              <p class="row ml-2 slider_text">Customer/Supplier Interface</p>
-              <input type="range" min="1" max="100" value="90" id="slider_cust">
-              <div id="selector_cust">
-                <div class="SelectorBtn"></div>
-                <div id="SelectValue_cust"></div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <!-- CONTACT-->
 
@@ -205,13 +156,13 @@
 
         <!-- CONTACT LINEAS -->
         <div class="row no-gutters">
-            <h6 class="col-6 mt-4 text-center"> 0034685942287 (Mobile) <br> 
-              Madrid, Spain. ZIP code 28027 </h6>
-              <a class="col-6 mt-4 text-center" href="mailto:octavian.lazar2013@gmail.com">octavian.lazar2013@gmail.com</a>
-          </div>
-         
-           
-         
+          <h6 class="col-6 mt-4 text-center"> 0034685942287 (Mobile) <br>
+            Madrid, Spain. ZIP code 28027 </h6>
+          <a class="col-6 mt-4 text-center" href="mailto:octavian.lazar2013@gmail.com">octavian.lazar2013@gmail.com</a>
+        </div>
+
+
+
 
 
 
@@ -231,8 +182,8 @@
             <canvas id="mychart"></canvas>
           </div>
         </div>
-      </div>
 
+      </div>
 
 
 
@@ -241,16 +192,16 @@
       <div class="col-md-3 div_right">
 
         <!-- MAIN NAME -->
-    
-    
-          <div class="row no-gutters no-wrap mt-4">
+
+
+        <div class="row no-gutters no-wrap mt-4">
           <div class=" col main_name">
             <h2>Octavian Lazar</h2>
             <h5>
               Quality Management Professional, <br> Quality Auditor, <br />
               Supplier/Customer Interface <br />
               Passionate programmer (as hobby)
-            </h5>  
+            </h5>
           </div>
           <div class="col" id="img_dest"> <img src="./media/index2.jpg" alt="">
           </div>
@@ -269,21 +220,21 @@
           </div>
         </div>
 
-  
 
-          <!-- LABEL MY PROF PARAGRAPH -->
 
-          <div class="row no-gutters">
-            <p class="mr-2 mt-2 text_p">
-              I'm a team player, enjoying winning and motivate others to win. <br> I have
-              a clear and open communication, networking skills, and a good
-              intercultural sensitivity. <br> I strongly believe that strong persons
-              creates strong business.
-            </p>
-          </div>
-    
+        <!-- LABEL MY PROF PARAGRAPH -->
 
- 
+        <div class="row no-gutters">
+          <p class="mr-2 mt-2 text_p">
+            I'm a team player, enjoying winning and motivate others to win. <br> I have
+            a clear and open communication, networking skills, and a good
+            intercultural sensitivity. <br> I strongly believe that strong persons
+            creates strong business.
+          </p>
+        </div>
+
+
+
 
 
 
@@ -299,7 +250,7 @@
           </div>
         </div>
 
-     
+
 
         <!-- CAROUSELL EXPERIENCE -->
 
@@ -310,7 +261,7 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item no-gutters active"  data-interval="7000">
+            <div class="carousel-item no-gutters active" data-interval="7000">
               <img src="" class="img_false block" alt="">
               <div class="carousel-caption  d-md-block">
                 <h2 class="H2_title">2017 - present</h2>
@@ -331,7 +282,8 @@
                 <h2 class="H2_title">2015 - 2017</h2>
                 <h3 class="job_name"> Group Leader / BOSCH Romania S.R.L</h3>
                 <ul class="experience_p">
-                  <li>Management of 12 associates including selection, Cpt.Manag., Development Plans,Perf. monitoring</li>
+                  <li>Management of 12 associates including selection, Cpt.Manag., Development Plans,Perf. monitoring
+                  </li>
                   <li>Responsible for all Serial support activities</li>
                   <li>Estimation and planning of the Group Budget including billing setup process</li>
                 </ul>
@@ -346,8 +298,8 @@
                   <li>Responsible for Budget, quality, and timeframe implementation of the Development projects after
                     SOP
                     (Products modifications in series</li>
-                    <li>Responsible for Bill of Material modification  after SOP</li>
-                    <li>Engineering change request Trainer/Expert</li>
+                  <li>Responsible for Bill of Material modification after SOP</li>
+                  <li>Engineering change request Trainer/Expert</li>
                 </ul>
               </div>
             </div>
@@ -359,8 +311,8 @@
                 <ul class="experience_p">
                   <li>Managing Supplier quality group -Incoming Inspection and Supplier Quality Assurance. Direct
                     supervision of 5 employees</li>
-                    <li>Setup of the Incoming Inspection Process Flow and SAP Config</li>
-                    <li>Technical advisor in case of products transfers and new suppliers locatization</li>
+                  <li>Setup of the Incoming Inspection Process Flow and SAP Config</li>
+                  <li>Technical advisor in case of products transfers and new suppliers locatization</li>
               </div>
             </div>
             <div class="carousel-item" data-interval="7000">
@@ -369,7 +321,8 @@
                 <h2 class="H2_title">2008 - 2012</h2>
                 <h3 class="job_name">Quality Lead Auditor / Continental Automotive Romania S.RL </h3>
                 <ul class="experience_p">
-                  <li>Lead Auditor for Forging, Bearing and Fasteners Product Category according to VDA6.3 Process Audit</li>
+                  <li>Lead Auditor for Forging, Bearing and Fasteners Product Category according to VDA6.3 Process Audit
+                  </li>
                   <li>Quality Improvement Program Leader with different german suppliers</li>
                   <li>Quality KPI Monitoring & Reporting</li>
                 </ul>
@@ -407,7 +360,7 @@
           </p>
         </div>
 
-                <!-- HOBIIES AND FREE TIME LABEL -->
+        <!-- HOBIIES AND FREE TIME LABEL -->
 
         <div class="row no-gutters mt-3">
           <div class="col-8  float-left ">
@@ -416,18 +369,18 @@
           </div>
         </div>
 
-          <div class="container">
-            <div class="row">
+        <div class="container">
+          <div class="row">
 
-              
-                  <div class="col img_hobbies "> <img class=" p-3 img_hobbies" src="./media/cr7.webp" alt=""></div>
-                  <div class="col img_hobbies">  <img class=" p-3 img_hobbies" src=".//media/jb.webp" alt=""></div>
-                  <div class="col img_hobbies"> <img class="p-3 img_hobbies" src="./media/travel.webp" alt=""></div>
-                  <div class="col img_hobbies"> <img class="p-3 img_hobbies" src="./media/programming.webp" alt=""></div>
-          
-            </div>
+
+            <div class="col img_hobbies "> <img class=" p-3 img_hobbies" src="./media/cr7.webp" alt=""></div>
+            <div class="col img_hobbies"> <img class=" p-3 img_hobbies" src=".//media/jb.webp" alt=""></div>
+            <div class="col img_hobbies"> <img class="p-3 img_hobbies" src="./media/travel.webp" alt=""></div>
+            <div class="col img_hobbies"> <img class="p-3 img_hobbies" src="./media/programming.webp" alt=""></div>
+
           </div>
-      
+        </div>
+
 
       </div>
     </div>

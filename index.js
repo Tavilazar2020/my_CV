@@ -2,78 +2,6 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./css_mq/style.css";
 
-let slider = document.getElementById("slider_qt");
-let selector = document.getElementById("selector");
-let SelectValue = document.getElementById("SelectValue");
-
-SelectValue.innerHTML = slider.value;
-
-slider_qt.oninput = function () {
-  SelectValue.innerHTML = this.value;
-  selector.style.left = this.value + "%";
-};
-
-// Funtions Ms-------------//
-
-let slider_ms = document.getElementById("slider_ms");
-let selector_MS_O = document.getElementById("selector_MS_O");
-let SelectValue_MS_O = document.getElementById("SelectValue_MS_O");
-
-SelectValue_MS_O.innerHTML = slider_ms.value;
-
-slider_ms.oninput = function () {
-  SelectValue_MS_O.innerHTML = this.value;
-  selector_MS_O.style.left = this.value + "%";
-};
-
-// ------------funtions negot----------//
-let slider_neg = document.getElementById("slider_neg");
-let selector_neg = document.getElementById("selector_neg");
-let SelectValue_neg = document.getElementById("SelectValue_neg");
-
-SelectValue_neg.innerHTML = slider_neg.value;
-
-slider_neg.oninput = function () {
-  SelectValue_neg.innerHTML = this.value;
-  selector_neg.style.left = this.value + "%";
-};
-
-// ------------funtions train----------//
-let slider_train = document.getElementById("slider_train");
-let selector_train = document.getElementById("selector_train");
-let SelectValue_train = document.getElementById("SelectValue_train");
-
-SelectValue_train.innerHTML = slider_train.value;
-
-slider_train.oninput = function () {
-  SelectValue_train.innerHTML = this.value;
-  selector_train.style.left = this.value + "%";
-};
-
-// ------------funtions train----------//
-let slider_prog = document.getElementById("slider_prog");
-let selector_prog = document.getElementById("selector_prog");
-let SelectValue_prog = document.getElementById("SelectValue_prog");
-
-SelectValue_prog.innerHTML = slider_prog.value;
-
-slider_prog.oninput = function () {
-  SelectValue_prog.innerHTML = this.value;
-  selector_prog.style.left = this.value + "%";
-};
-
-// ------------funtions train----------//
-let slider_cust = document.getElementById("slider_cust");
-let selector_cust = document.getElementById("selector_cust");
-let SelectValue_cust = document.getElementById("SelectValue_cust");
-
-SelectValue_cust.innerHTML = slider_cust.value;
-
-slider_cust.oninput = function () {
-  SelectValue_cust.innerHTML = this.value;
-  selector_cust.style.left = this.value + "%";
-};
-
 // CANVAS CHARTS.js
 let myChart = document.getElementById("mychart").getContext("2d");
 let mylanguageChart = new Chart(myChart, {
@@ -95,7 +23,14 @@ let mylanguageChart = new Chart(myChart, {
   },
   options: {
     legend: {
-      display: false,
+        display: false
+    },
+    tooltips: {
+        callbacks: {
+           label: function(tooltipItem) {
+                  return tooltipItem.yLabel;
+           }
+        }
     },
     scales: {
       xAxes: [
@@ -129,6 +64,339 @@ let mylanguageChart = new Chart(myChart, {
   },
 });
 
+
+
+// PIE CHART QUALITY TOOLS
+
+let mySkillsChart = document.getElementById("myPiechart").getContext("2d");
+let myQualityToolsChart = new Chart(mySkillsChart, {
+  type: "pie",
+  data: {
+    labels: ["Quality Tools"],
+    datasets: [
+      {
+        data: [90, 10, ],
+        backgroundColor: ["#5c6e91"],
+        borderColor: [
+        ],
+      },
+    ],
+  },
+  options: {
+    legend: {
+      display: true,
+    },
+    Label: {
+      display: false,
+    },
+    scales: {
+      xAxes: [
+        {
+          scaleLabel: {
+            display: false,
+          },
+          gridLines: {
+            display: false,
+            drawBorder: false, //<- set this
+          },
+          ticks: {
+            fontSize: 0,
+            beginAtZero: false,
+          },
+        },
+      ],
+      yAxes: [
+        {
+          gridLines: {
+            display: false,
+            drawBorder: false, //<- set this
+          },
+          ticks: {
+            fontSize: 0,
+            beginAtZero: false,
+          },
+        },
+      ],
+    },
+  },
+});
+
+// PIE CHART MS TOOLS
+
+let myMSChart = document.getElementById("myPieMSchart").getContext("2d");
+let myMS_Chart = new Chart(myMSChart, {
+  type: "pie",
+  data: {
+    labels: ["MS Office Tools"],
+    datasets: [
+      {
+        data: [70, 30, ],
+        backgroundColor: ["#aee6e6"],
+        borderColor: [
+        ],
+      },
+    ],
+  },
+  options: {
+    legend: {
+      display: true,
+    },
+    scales: {
+      xAxes: [
+        {
+          scaleLabel: {
+            display: false,
+          },
+          gridLines: {
+            display: false,
+            drawBorder: false, //<- set this
+          },
+          ticks: {
+            fontSize: 0,
+            beginAtZero: false,
+          },
+        },
+      ],
+      yAxes: [
+        {
+          gridLines: {
+            display: false,
+            drawBorder: false, //<- set this
+          },
+          ticks: {
+            fontSize: 0,
+            beginAtZero: false,
+          },
+        },
+      ],
+    },
+  },
+});
+
+// PIE CHART NEG TOOLS
+
+let myNegChart = document.getElementById("myPieNegchart").getContext("2d");
+let myNeg_Chart = new Chart(myNegChart, {
+  type: "pie",
+  data: {
+    labels: ["Negotiation"],
+    datasets: [
+      {
+        data: [60, 40, ],
+        backgroundColor: ["#f2dcbb"],
+        borderColor: [
+        ],
+      },
+    ],
+  },
+  options: {
+    legend: {
+      fontSize: 4,
+      display: true,
+    },
+    scales: {
+      xAxes: [
+        {
+          scaleLabel: {
+            display: false,
+          },
+          gridLines: {
+            display: false,
+            drawBorder: false, //<- set this
+          },
+          ticks: {
+            fontSize: 0,
+            beginAtZero: false,
+          },
+        },
+      ],
+      yAxes: [
+        {
+          gridLines: {
+            display: false,
+            drawBorder: false, //<- set this
+          },
+          ticks: {
+            fontSize: 0,
+            beginAtZero: false,
+          },
+        },
+      ],
+    },
+  },
+});
+
+
+
+let myTrainChart = document.getElementById("myPieTrainchart").getContext("2d");
+let myTrain_Chart = new Chart(myTrainChart, {
+  type: "pie",
+  data: {
+    labels: ["Trainer",],
+    datasets: [
+      {
+        data: [80, 20, ],
+        backgroundColor: ["#93abd3"],
+        borderColor: [
+        ],
+      },
+    ],
+  },
+  options: {
+    legend: {
+      display: true,
+    },
+    scales: {
+      xAxes: [
+        {
+          scaleLabel: {
+            display: false,
+          },
+          gridLines: {
+            display: false,
+            drawBorder: false, //<- set this
+          },
+          ticks: {
+            fontSize: 0,
+            beginAtZero: false,
+          },
+        },
+      ],
+      yAxes: [
+        {
+          gridLines: {
+            display: false,
+            drawBorder: false, //<- set this
+          },
+          ticks: {
+            fontSize: 0,
+            beginAtZero: false,
+          },
+        },
+      ],
+    },
+  },
+});
+
+// ------PROGRAMMING 
+
+let myProgChart = document.getElementById("myPieProgchart").getContext("2d");
+let myProg_Chart = new Chart(myProgChart, {
+  type: "pie",
+  data: {
+    labels: ["Programming"],
+    datasets: [
+      {
+        data: [30, 70, ],
+        backgroundColor: ["#fd8c04"],
+        borderColor: [
+        ],
+      },
+    ],
+  },
+  options: {
+    legend: {
+      display: true,
+    },
+    scales: {
+      xAxes: [
+        {
+          scaleLabel: {
+            display: false,
+          },
+          gridLines: {
+            display: false,
+            drawBorder: false, //<- set this
+          },
+          ticks: {
+            fontSize: 0,
+            beginAtZero: false,
+          },
+        },
+      ],
+      yAxes: [
+        {
+          gridLines: {
+            display: false,
+            drawBorder: false, //<- set this
+          },
+          ticks: {
+            fontSize: 0,
+            beginAtZero: false,
+          },
+        },
+      ],
+    },
+  },
+});
+
+
+// ------CUSTOMER
+
+let myCustChart = document.getElementById("myPieCustchart").getContext("2d");
+let myCust_Chart = new Chart(myCustChart, {
+  type: "pie",
+  data: {
+    labels: ["Cust./Supplier Interface"],
+    datasets: [
+      {
+        data: [90, 10, ],
+        backgroundColor: ["#8ad7c1"],
+        borderColor: [
+        ],
+      },
+    ],
+  },
+  options: {
+    legend: {
+      display: true,
+    },
+    cutoutPercentage:{
+ display:true,
+    },
+    scales: {
+      xAxes: [
+        {
+          scaleLabel: {
+            display: false,
+          },
+          gridLines: {
+            display: false,
+            drawBorder: false, //<- set this
+          },
+          ticks: {
+            fontSize: 0,
+            beginAtZero: false,
+          },
+        },
+      ],
+      yAxes: [
+        {
+          gridLines: {
+            display: false,
+            drawBorder: false, //<- set this
+          },
+          ticks: {
+            fontSize: 0,
+            beginAtZero: false,
+          },
+        },
+      ],
+    },
+  },
+});
+
+
+
+
+
+
+
+
+
+
+
+
 // moving photo
 
 
@@ -149,71 +417,3 @@ var x = window.matchMedia("(max-width: 768px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
 //=============================================
-
-// const mediumBp = matchMedia('(max-width: 767px)');
-// const changeSize = mql => {
-// mql.matches
-// ? document.getElementById("img_move").append(document.getElementById("img_dest"))
-// : document.getElementById("img_dest").append(document.getElementById("img_move"))
-// }
-
-// mediumBp.addEventListener(changeSize);
-// changeSize(mediumBp);
-
-//===============================================================
-
-
-
-// function myFunction(e) {
-//   if (e.matches) { // If media query matches
-//     document.getElementById("img_move").append(document.getElementById("img_dest"));
-
-//   } else{
-//     document.getElementById("img_dest").append(document.getElementById("img_move"));
-//   }
-// }
-
-// var e = window.matchMedia("(max-width: 767px)")
-// myFunction(e) // Call listener function at run time
-// e.MediaqueryListEvent(myFunction) // Attach listener function on state changes
-
-
-// function myFunction(event) {  //on a state change you get myFunction called but with parameter event, not x
-//   if (event.matches) { // If media query matches
-//     console.log('media query matches');
-//     document.getElementById("img_move").append(document.getElementById("img_dest"));
-// // you will see an error here: on Firefox: media query matches test14.html:11:13
-// //HierarchyRequestError: Node cannot be inserted at the specified point in the hierarchy
-// //on Edge 
-// //Uncaught DOMException: Failed to execute 'append' on 'Element': The new child element contains the parent.
-// //    at MediaQueryList.myFunction (file:///C:/Users/annet/Documents/test14.html:1
-
-//   } else{
-//     console.log('media query does not match');
-//     document.getElementById("img_dest").append(document.getElementById("img_move"));
-//   }
-// }
-// var x = window.matchMedia("(max-width: 767px)");//brackets were missing so never saw media width changing
-
-// //myFunction(x); // Call listener function at run time - this function needs an event to match up the media tests with
-
-// mediaQueryList.addListener(myFunction, x); // Attach listener function on state changes
-
-//===================STACK
-
-// const listener = evt => {
-//   if (evt.matches) {
-//       document.getElementsByClassName("img_mob").append(document.getElementsById("img_dest_a"));
-
-//   } else {
-//       document.getElementsByClassName("img_mob").append(document.getElementsById("img_dest_b"));
-//   }
-// };
-
-// const mediaQueryList = window.matchMedia('(max-width: 767px)');
-
-// listener(mediaQueryList);
-
-// mediaQueryList.addEventListener('change', listener);
-
-

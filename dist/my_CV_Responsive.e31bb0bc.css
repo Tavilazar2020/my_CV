@@ -10498,9 +10498,10 @@ img {
 }
 
 #selector {
-  position: absolute;
-  left: 90%;
-  margin-top: -10%;
+ position: absolute;
+  margin-left: 90%;
+  padding-bottom: 30%;
+ 
 }
 
 .SelectorBtn {
@@ -10913,7 +10914,7 @@ img {
   padding-left: 10%;
 }
 a {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* LANGUAGES */
