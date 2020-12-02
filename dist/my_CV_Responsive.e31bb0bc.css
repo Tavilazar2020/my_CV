@@ -10261,7 +10261,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-@media (max-width: 898px) {
+@media (max-width: 960px) {
   .div_right {
     order: 1;
     position: relative;

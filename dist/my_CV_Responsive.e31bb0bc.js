@@ -18678,7 +18678,7 @@ function myFunction(e) {
   }
 }
 
-var x = window.matchMedia("(max-width: 898px)");
+var x = window.matchMedia("(max-width: 960px)");
 myFunction(x); // Call listener function at run time
 
 x.addListener(myFunction); // Attach listener function on state changes
@@ -18711,7 +18711,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60129" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63573" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
