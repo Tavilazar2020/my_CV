@@ -18337,72 +18337,7 @@ require("bootstrap/dist/css/bootstrap.css");
 
 require("./css_mq/style.css");
 
-var slider = document.getElementById("slider_qt");
-var selector = document.getElementById("selector");
-var SelectValue = document.getElementById("SelectValue");
-SelectValue.innerHTML = slider.value;
-
-slider_qt.oninput = function () {
-  SelectValue.innerHTML = this.value;
-  selector.style.left = this.value + "%";
-}; // Funtions Ms-------------//
-
-
-var slider_ms = document.getElementById("slider_ms");
-var selector_MS_O = document.getElementById("selector_MS_O");
-var SelectValue_MS_O = document.getElementById("SelectValue_MS_O");
-SelectValue_MS_O.innerHTML = slider_ms.value;
-
-slider_ms.oninput = function () {
-  SelectValue_MS_O.innerHTML = this.value;
-  selector_MS_O.style.left = this.value + "%";
-}; // ------------funtions negot----------//
-
-
-var slider_neg = document.getElementById("slider_neg");
-var selector_neg = document.getElementById("selector_neg");
-var SelectValue_neg = document.getElementById("SelectValue_neg");
-SelectValue_neg.innerHTML = slider_neg.value;
-
-slider_neg.oninput = function () {
-  SelectValue_neg.innerHTML = this.value;
-  selector_neg.style.left = this.value + "%";
-}; // ------------funtions train----------//
-
-
-var slider_train = document.getElementById("slider_train");
-var selector_train = document.getElementById("selector_train");
-var SelectValue_train = document.getElementById("SelectValue_train");
-SelectValue_train.innerHTML = slider_train.value;
-
-slider_train.oninput = function () {
-  SelectValue_train.innerHTML = this.value;
-  selector_train.style.left = this.value + "%";
-}; // ------------funtions train----------//
-
-
-var slider_prog = document.getElementById("slider_prog");
-var selector_prog = document.getElementById("selector_prog");
-var SelectValue_prog = document.getElementById("SelectValue_prog");
-SelectValue_prog.innerHTML = slider_prog.value;
-
-slider_prog.oninput = function () {
-  SelectValue_prog.innerHTML = this.value;
-  selector_prog.style.left = this.value + "%";
-}; // ------------funtions train----------//
-
-
-var slider_cust = document.getElementById("slider_cust");
-var selector_cust = document.getElementById("selector_cust");
-var SelectValue_cust = document.getElementById("SelectValue_cust");
-SelectValue_cust.innerHTML = slider_cust.value;
-
-slider_cust.oninput = function () {
-  SelectValue_cust.innerHTML = this.value;
-  selector_cust.style.left = this.value + "%";
-}; // CANVAS CHARTS.js
-
-
+// CANVAS CHARTS.js
 var myChart = document.getElementById("mychart").getContext("2d");
 var mylanguageChart = new Chart(myChart, {
   type: "bar",
@@ -18417,6 +18352,13 @@ var mylanguageChart = new Chart(myChart, {
   options: {
     legend: {
       display: false
+    },
+    tooltips: {
+      callbacks: {
+        label: function label(tooltipItem) {
+          return tooltipItem.yLabel;
+        }
+      }
     },
     scales: {
       xAxes: [{
@@ -18446,21 +18388,301 @@ var mylanguageChart = new Chart(myChart, {
       }]
     }
   }
-}); // moving photo
+}); // PIE CHART QUALITY TOOLS
 
-function myFunction(x) {
-  if (x.matches) {
-    // If media query matches
-    $("#img_dest").append($("#img_move"));
+var mySkillsChart = document.getElementById("myPiechart").getContext("2d");
+var myQualityToolsChart = new Chart(mySkillsChart, {
+  type: "pie",
+  data: {
+    labels: ["Quality Tools"],
+    datasets: [{
+      data: [90, 10],
+      backgroundColor: ["#5c6e91"],
+      borderColor: []
+    }]
+  },
+  options: {
+    legend: {
+      display: true
+    },
+    Label: {
+      display: false
+    },
+    scales: {
+      xAxes: [{
+        scaleLabel: {
+          display: false
+        },
+        gridLines: {
+          display: false,
+          drawBorder: false //<- set this
+
+        },
+        ticks: {
+          fontSize: 0,
+          beginAtZero: false
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: false,
+          drawBorder: false //<- set this
+
+        },
+        ticks: {
+          fontSize: 0,
+          beginAtZero: false
+        }
+      }]
+    }
+  }
+}); // PIE CHART MS TOOLS
+
+var myMSChart = document.getElementById("myPieMSchart").getContext("2d");
+var myMS_Chart = new Chart(myMSChart, {
+  type: "pie",
+  data: {
+    labels: ["MS Office Tools"],
+    datasets: [{
+      data: [70, 30],
+      backgroundColor: ["#aee6e6"],
+      borderColor: []
+    }]
+  },
+  options: {
+    legend: {
+      display: true
+    },
+    scales: {
+      xAxes: [{
+        scaleLabel: {
+          display: false
+        },
+        gridLines: {
+          display: false,
+          drawBorder: false //<- set this
+
+        },
+        ticks: {
+          fontSize: 0,
+          beginAtZero: false
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: false,
+          drawBorder: false //<- set this
+
+        },
+        ticks: {
+          fontSize: 0,
+          beginAtZero: false
+        }
+      }]
+    }
+  }
+}); // PIE CHART NEG TOOLS
+
+var myNegChart = document.getElementById("myPieNegchart").getContext("2d");
+var myNeg_Chart = new Chart(myNegChart, {
+  type: "pie",
+  data: {
+    labels: ["Negotiation"],
+    datasets: [{
+      data: [60, 40],
+      backgroundColor: ["#f2dcbb"],
+      borderColor: []
+    }]
+  },
+  options: {
+    legend: {
+      fontSize: 4,
+      display: true
+    },
+    scales: {
+      xAxes: [{
+        scaleLabel: {
+          display: false
+        },
+        gridLines: {
+          display: false,
+          drawBorder: false //<- set this
+
+        },
+        ticks: {
+          fontSize: 0,
+          beginAtZero: false
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: false,
+          drawBorder: false //<- set this
+
+        },
+        ticks: {
+          fontSize: 0,
+          beginAtZero: false
+        }
+      }]
+    }
+  }
+});
+var myTrainChart = document.getElementById("myPieTrainchart").getContext("2d");
+var myTrain_Chart = new Chart(myTrainChart, {
+  type: "pie",
+  data: {
+    labels: ["Trainer"],
+    datasets: [{
+      data: [80, 20],
+      backgroundColor: ["#93abd3"],
+      borderColor: []
+    }]
+  },
+  options: {
+    legend: {
+      display: true
+    },
+    scales: {
+      xAxes: [{
+        scaleLabel: {
+          display: false
+        },
+        gridLines: {
+          display: false,
+          drawBorder: false //<- set this
+
+        },
+        ticks: {
+          fontSize: 0,
+          beginAtZero: false
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: false,
+          drawBorder: false //<- set this
+
+        },
+        ticks: {
+          fontSize: 0,
+          beginAtZero: false
+        }
+      }]
+    }
+  }
+}); // ------PROGRAMMING 
+
+var myProgChart = document.getElementById("myPieProgchart").getContext("2d");
+var myProg_Chart = new Chart(myProgChart, {
+  type: "pie",
+  data: {
+    labels: ["Programming"],
+    datasets: [{
+      data: [30, 70],
+      backgroundColor: ["#fd8c04"],
+      borderColor: []
+    }]
+  },
+  options: {
+    legend: {
+      display: true
+    },
+    scales: {
+      xAxes: [{
+        scaleLabel: {
+          display: false
+        },
+        gridLines: {
+          display: false,
+          drawBorder: false //<- set this
+
+        },
+        ticks: {
+          fontSize: 0,
+          beginAtZero: false
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: false,
+          drawBorder: false //<- set this
+
+        },
+        ticks: {
+          fontSize: 0,
+          beginAtZero: false
+        }
+      }]
+    }
+  }
+}); // ------CUSTOMER
+
+var myCustChart = document.getElementById("myPieCustchart").getContext("2d");
+var myCust_Chart = new Chart(myCustChart, {
+  type: "pie",
+  data: {
+    labels: ["Cust./Supplier Interface"],
+    datasets: [{
+      data: [90, 10],
+      backgroundColor: ["#8ad7c1"],
+      borderColor: []
+    }]
+  },
+  options: {
+    legend: {
+      display: true
+    },
+    cutoutPercentage: {
+      display: true
+    },
+    scales: {
+      xAxes: [{
+        scaleLabel: {
+          display: false
+        },
+        gridLines: {
+          display: false,
+          drawBorder: false //<- set this
+
+        },
+        ticks: {
+          fontSize: 0,
+          beginAtZero: false
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: false,
+          drawBorder: false //<- set this
+
+        },
+        ticks: {
+          fontSize: 0,
+          beginAtZero: false
+        }
+      }]
+    }
+  }
+}); // moving photo
+//=======================================================
+
+function myFunction(e) {
+  if (e.matches) {
+    // If media query matches    
+    document.getElementById("img_move").style.display = 'none';
+    document.getElementById("img_dest").style.display = 'block';
   } else {
-    $("#img_move").append($("#img_dest"));
+    document.getElementById("img_move").style.display = 'block';
+    document.getElementById("img_dest").style.display = 'none';
   }
 }
 
-var x = window.matchMedia("(max-width: 767px)");
+var x = window.matchMedia("(max-width: 960px)");
 myFunction(x); // Call listener function at run time
 
 x.addListener(myFunction); // Attach listener function on state changes
+//=============================================
 },{"bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","bootstrap/dist/css/bootstrap.css":"node_modules/bootstrap/dist/css/bootstrap.css","./css_mq/style.css":"css_mq/style.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -18489,7 +18711,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62461" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56030" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
